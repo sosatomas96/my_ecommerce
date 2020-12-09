@@ -6,28 +6,22 @@ function Navbar() {
             <div className='container'>
                 <h1 id='title'>Green Purple Growshop</h1>
 
-                <nav>
+                <nav> 
                     <ul id='navbar'>
-                        <ui>
+                        <li>
                             <a href='#'>Seccion 1</a>
-                        </ui>
-                        <ui>
+                        </li>
+                        <li>
                             <a href='#'>Seccion 2</a>
-                        </ui>
-                        <ui>
+                        </li>
+                        <li>
                             <a href='#'>Seccion 3</a>
-                        </ui>
-                        <ui>
-                            <a href='#'>Seccion 4</a>
-                        </ui>
-                        <ui>
-                            <a href='#'>Seccion 5</a>
-                        </ui>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default Navbar;

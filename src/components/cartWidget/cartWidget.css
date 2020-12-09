@@ -1,0 +1,11 @@
+.cartWidget{
+    display: inline-flex;
+    align-self: center;
+    padding: 10px;
+    height: 25px;
+    width: 25px;    
+}
+
+.cartWidget:hover{
+    cursor: pointer;    
+}
