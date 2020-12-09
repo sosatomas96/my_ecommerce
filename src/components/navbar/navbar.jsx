@@ -4,17 +4,15 @@ function Navbar() {
     return(
         <header> 
             <div className='container'>
-                <h1 id='title'>Green Purple Growshop</h1>
-
                 <nav> 
                     <ul id='navbar'>
-                        <li>
+                        <li className='list-item'>
                             <a href='#'>Seccion 1</a>
                         </li>
-                        <li>
+                        <li className='list-item'>
                             <a href='#'>Seccion 2</a>
                         </li>
-                        <li>
+                        <li className='list-item'>
                             <a href='#'>Seccion 3</a>
                         </li>
                     </ul>
