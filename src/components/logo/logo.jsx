@@ -1,11 +1,12 @@
 import './logo.css';
+import Logo from "../../assets/logo.jpg"
 
-function Logo(){
+function MainLogo(){
     return(
         <div className='logo-container'>
-            <img src="./src/assets/logo.jpg" alt='logo' id='logo'/>
+            <img src={Logo} alt='logo' id='logo'/>
         </div>
     )
 }
 
-export default Logo;
+export default MainLogo;

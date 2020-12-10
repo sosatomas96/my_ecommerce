@@ -1,20 +1,15 @@
 import './navbar.css';
+import NavItem from '../navbar-item/navbar-item';
 
-function Navbar() {
+function Navbar({text, url}) {
     return(
         <header> 
             <div className='container'>
                 <nav> 
                     <ul id='navbar'>
-                        <li className='list-item'>
-                            <a href='#'>Seccion 1</a>
-                        </li>
-                        <li className='list-item'>
-                            <a href='#'>Seccion 2</a>
-                        </li>
-                        <li className='list-item'>
-                            <a href='#'>Seccion 3</a>
-                        </li>
+                        <NavItem text='Seccion 1' url='#'/>
+                        <NavItem text='Seccion 2' url='#'/>
+                        <NavItem text='Seccion 3' url='#'/>
                     </ul>
                 </nav>
             </div>
