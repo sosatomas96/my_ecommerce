@@ -1,7 +1,15 @@
+.cartWidget-container{
+    display: flex;
+    justify-content: right;
+}
+
 .cartWidget{
+    display: flex;
+    background-color: #ccf62c;
     padding: 10px;
     height: 25px;
-    width: 25px;    
+    width: 25px;
+    justify-content: right;    
 }
 
 .cartWidget:hover{

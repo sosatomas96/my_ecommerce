@@ -3,7 +3,7 @@ import './cartWidget.css';
 
 function CartWidget(){
     return(
-      <div>
+      <div className='CartWidget-container'>
           <BiCart className='cartWidget' />
       </div>  
     );
