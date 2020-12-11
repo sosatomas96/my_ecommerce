@@ -5,11 +5,11 @@
 
 .cartWidget{
     display: flex;
-    background-color: #ccf62c;
+    background-color: none;
     padding: 10px;
-    height: 25px;
-    width: 25px;
-    justify-content: right;    
+    height: 40px;
+    width: 40px;
+      
 }
 
 .cartWidget:hover{

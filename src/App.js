@@ -1,16 +1,16 @@
 import Navbar from './components/navbar/navbar';
-import CartWidget from './components/cartWidget/cartWidget';
 import MainLogo from './components/logo/logo';
 import Footer from './components/footer/footer';
+import ProductContainer from './components/productContainer/productContainer';
 
 function App() {
   return (
-    <div>
-    <CartWidget/>
+    <>
     <Navbar/>
     <MainLogo/>
+    <ProductContainer/>
     <Footer/>
-    </div>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import './navbar.css';
 import NavItem from '../navbar-item/navbar-item';
+import CartWidget from '../cartWidget/cartWidget';
 
 function Navbar({text, url}) {
     return(
@@ -10,6 +11,7 @@ function Navbar({text, url}) {
                         <NavItem text='Seccion 1' url='#'/>
                         <NavItem text='Seccion 2' url='#'/>
                         <NavItem text='Seccion 3' url='#'/>
+                        <CartWidget/>
                     </ul>
                 </nav>
             </div>
