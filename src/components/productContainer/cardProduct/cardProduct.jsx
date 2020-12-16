@@ -1,9 +1,9 @@
-// import './cardProduct.css/';
+//import './cardProduct.css/';
 
 function cardProduct({product, photo, quantity, price}){
     return(
         <div id='card-container'>
-            {photo}
+            <img src='https://placehold.it/300x300'/>
             <div className='card-container'>
                 <h3>{product}</h3>
                 <span>{price}</span>
