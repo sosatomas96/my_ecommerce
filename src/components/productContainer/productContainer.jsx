@@ -1,12 +1,14 @@
-import cardProduct from './cardProduct/cardProduct';
+import ProductCard from './productCard/productCard';
 import './productContainer.css';
 
-function ProductContainer({product, photo, quantity, price}){
+function ProductContainer(){
     return(
         <>
         <div id='product-container'>
             <div className='product-container'>
-                    <cardProduct/>
+                    <ProductCard title='Encendedores'
+                                 price='$300'
+                                 />
             </div>
         </div>
         </>
