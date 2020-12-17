@@ -1,7 +1,7 @@
 import Navbar from './components/navbar/navbar';
 import MainLogo from './components/logo/logo';
 import Footer from './components/footer/footer';
-import ProductContainer from './components/productContainer/productContainer';
+import ProductContainer from './components/ProductContainer/ProductContainer';
 
 function App() {
   return (
