@@ -1,5 +1,5 @@
 import { BiCart } from 'react-icons/bi';
-import './cartWidget.css';
+import './CartWidget.css';
 
 function CartWidget(){
     return(

@@ -1,4 +1,4 @@
-import './logo.css';
+import './Logo.css';
 import Logo from "../../assets/logo.jpg"
 
 function MainLogo(){

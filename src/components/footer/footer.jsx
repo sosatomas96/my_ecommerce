@@ -1,6 +1,6 @@
 import { GrInstagram, GrYoutube } from "react-icons/gr";
-import NavItem from '../navbar-item/navbar-item'
-import './footer.css';
+import NavItem from '../NavItem/NavItem'
+import './Footer.css';
 
 function Footer(){
     return(

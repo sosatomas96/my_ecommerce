@@ -1,6 +1,6 @@
-import Navbar from './components/navbar/navbar';
-import MainLogo from './components/logo/logo';
-import Footer from './components/footer/footer';
+import Navbar from './components/Navbar/Navbar';
+import MainLogo from './components/Logo/Logo';
+import Footer from './components/Footer/Footer';
 import ProductContainer from './components/ProductContainer/ProductContainer';
 
 function App() {
