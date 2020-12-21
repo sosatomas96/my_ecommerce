@@ -1,11 +1,8 @@
-#product-container{
+.product-container{
+    height: 500px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.product-container{
-    height: 500px;
-    width: 80%;
-    border: 1px solid black;
-}

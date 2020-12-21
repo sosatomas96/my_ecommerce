@@ -17,23 +17,22 @@ function ProductCard({title, photo, price,}){
 
 
     return(
-        <>
-        <div id='card-container'>
-             <img src='https://placehold.it/300x300' alt='imagen de prueba'/> 
-                <div className='card-container'>
+        <> 
+            <div className='card-container'>
                
                
+                <img src='https://placehold.it/300x300' alt='imagen de prueba' className='img-product'/> 
                     
-                    <h3>{title}</h3>
-                    <span>{price}</span>
-                    <button disabled={quantity === 1 ? 'disabled' : null } onClick={substractQuantity}>-</button>
-                    <label>{quantity}</label>
-                    <button onClick={addQuantity}>+</button>
-                
-                <button>Añadir al carrito!</button>
-                
+                <h3 className='product-title'>{title}</h3>
+                <span className='price'>{price}</span>
+                <div className='flex-qty'>
+                <button disabled={quantity === 1 ? 'disabled' : null } onClick={substractQuantity} className='btn-qty'>-</button>
+                <label>{quantity}</label>
+                <button onClick={addQuantity} className='btn-qty'>+</button>
                 </div>
-        </div>
+                <button className='btn-add-cart'>Añadir al carrito!</button>
+                
+            </div>
         </>
     )
 }
