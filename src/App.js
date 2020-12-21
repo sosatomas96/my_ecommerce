@@ -26,13 +26,10 @@ function App() {
 
 
 
-  const getProduct = new Promise((resolve, reject) => {
-  
-
+  const getProduct = new Promise((resolve, reject) => { 
       resolve(textProduct);
-   
   })
-  
+
   getProduct
     .then( console.log(textProduct))
     .catch(error => console.log(error));
