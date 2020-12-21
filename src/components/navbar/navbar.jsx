@@ -8,9 +8,10 @@ function Navbar({text, url}) {
             <div className='container'>
                 <nav> 
                     <ul id='navbar'>
-                        <NavItem text='Seccion 1' url='#'/>
-                        <NavItem text='Seccion 2' url='#'/>
-                        <NavItem text='Seccion 3' url='#'/>
+                        <NavItem text='Inicio' url='#'/>
+                        <NavItem text='Parafernalia' url='#'/>
+                        <NavItem text='Cultivo' url='#'/>
+                        <NavItem text='Contacto' url='#'/>
                         <CartWidget/>
                     </ul>
                 </nav>

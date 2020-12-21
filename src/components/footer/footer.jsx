@@ -7,10 +7,9 @@ function Footer(){
         
         <div className='footer-container'>
             <div className='footer-links-container'>
+              <NavItem text='Parafernalia' url='#' className='footer-link'/>
+              <NavItem text='Cultivo' url='#' className='footer-link'/>
               <NavItem text='Contacto' url='#' className='footer-link'/>
-              <NavItem text='Productos' url='#' className='footer-link'/>
-              <NavItem text='Otra seccion' url='#' className='footer-link'/>
-              <NavItem text='Otra seccion' url='#' className='footer-link'/>
             </div>
             <div className='footer-icons-container'>
               <GrInstagram className='instagram-icon'/>
