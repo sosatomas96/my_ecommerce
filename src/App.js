@@ -2,6 +2,7 @@ import Navbar from './components/Navbar/Navbar';
 import MainLogo from './components/Logo/Logo';
 import Footer from './components/Footer/Footer';
 import ProductContainer from './components/ProductContainer/ProductContainer';
+import ProductDetail from './components/ProductContainer/ProductDetail/ProductDetail';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <ProductDetail title='ProductDetail test' price='$500'/>
     <MainLogo/>
     <ProductContainer/>
     <Footer/>
