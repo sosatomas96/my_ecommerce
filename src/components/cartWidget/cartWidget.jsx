@@ -1,13 +1,26 @@
 import { BiCart } from 'react-icons/bi';
+import {useState} from 'react';
 import './CartWidget.css';
 
-function CartWidget(){
 
-    
+function CartWidget ({show, action}){
+
+    const [ShowWidgetCart, setShowWidgetCart] = useState (false);
+
+    const OpenWidgetCart = () => {
+      setShowWidgetCart(!ShowWidgetCart);
+    }
+
 
     return(
-      <div className='CartWidget-container'>
-          <BiCart className='cartWidget' />
+      <div className={`widgetCart ${show ? 'open' : 'close'}`}>
+          <BiCart 
+            className='cartWidget' 
+            action={OpenWidgetCart} 
+            show={ShowWidgetCart} 
+            onClick={OpenWidgetCart}
+          />
+          
       </div>  
     );
     

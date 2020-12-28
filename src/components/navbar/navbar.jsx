@@ -1,17 +1,23 @@
 import './Navbar.css';
 import NavItem from '../NavItem/NavItem';
 import CartWidget from '../CartWidget/CartWidget';
+import {Link} from 'react-router-dom';
 
-function Navbar({text, url}) {
+function Navbar({text}) {
     return(
         <header> 
             <div className='container'>
                 <nav> 
                     <ul id='navbar'>
-                        <NavItem text='Inicio' url='#'/>
-                        <NavItem text='Parafernalia' url='#'/>
-                        <NavItem text='Cultivo' url='#'/>
-                        <NavItem text='Contacto' url='#'/>
+                        <Link to='/'>
+                            <NavItem text='Inicio'/>
+                        </Link>
+                        <Link to='/products'>
+                            <NavItem text='Productos'/>
+                        </Link>
+                        <Link to='/contact'>
+                            <NavItem text='Contacto'/>
+                        </Link>
                         <CartWidget/>
                     </ul>
                 </nav>
