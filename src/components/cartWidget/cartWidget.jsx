@@ -3,7 +3,7 @@ import {useState} from 'react';
 import './CartWidget.css';
 
 
-function CartWidget ({show, action}){
+function CartWidget ({show}){
 
     const [ShowWidgetCart, setShowWidgetCart] = useState (false);
 
@@ -16,8 +16,6 @@ function CartWidget ({show, action}){
       <div className={`widgetCart ${show ? 'open' : 'close'}`}>
           <BiCart 
             className='cartWidget' 
-            action={OpenWidgetCart} 
-            show={ShowWidgetCart} 
             onClick={OpenWidgetCart}
           />
           

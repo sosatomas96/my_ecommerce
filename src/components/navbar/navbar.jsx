@@ -2,8 +2,11 @@ import './Navbar.css';
 import NavItem from '../NavItem/NavItem';
 import CartWidget from '../CartWidget/CartWidget';
 import {Link} from 'react-router-dom';
+import {useState} from 'react';
 
-function Navbar({text}) {
+function Navbar({text, show}) {
+ 
+
     return(
         <header> 
             <div className='container'>
@@ -18,7 +21,7 @@ function Navbar({text}) {
                         <Link to='/contact'>
                             <NavItem text='Contacto'/>
                         </Link>
-                        <CartWidget/>
+                        <CartWidget />
                     </ul>
                 </nav>
             </div>
