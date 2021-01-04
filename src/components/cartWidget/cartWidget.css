@@ -4,7 +4,7 @@
 }
 
 .cartWidget{
-    display: flex;
+    display: inline-block;
     background-color: none;
     padding: 10px;
     height: 40px;
@@ -16,13 +16,15 @@
     cursor: pointer;    
 }
 
+.widgetCart{
+    display: none;
+}
+
+
 .open{
     display: block;
-    height: 500px;
     width: 250px;
+    height: 500px;
     border: black solid 1px;
 }
 
-.close{
-    
-}

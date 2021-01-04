@@ -1,3 +1,4 @@
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import { BiCart } from 'react-icons/bi';
 import { useState } from 'react';
 import './CartWidget.css';
@@ -9,19 +10,24 @@ function CartWidget (){
 
     const OpenWidgetCart = () => {
       setShowWidgetCart(!ShowWidgetCart);
+
     }
 
 
     return(
-      <div className={`widgetCart ${ShowWidgetCart ? 'open' : 'close'}`}>
+      <>
           <BiCart 
             className='cartWidget' 
             onClick={OpenWidgetCart}
           />
-          
-      </div>  
-    );
+          <div className={`widgetCart ${ShowWidgetCart && 'open'}`}>
+            <div>
+              <a>Ir al carrito...</a>
+            </div>
+          </div>
+      </>  
+    )
     
-};
+}
 
 export default CartWidget;

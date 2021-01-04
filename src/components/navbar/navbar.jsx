@@ -4,14 +4,14 @@ import CartWidget from '../CartWidget/CartWidget';
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
 
-function Navbar({text, show}) {
+function Navbar() {
  
 
     return(
         <header> 
             <div className='container'>
                 <nav> 
-                    <ul id='navbar'>
+                    <ul id='navbar' className='purple lighten-2'>
                         <Link to='/'>
                             <NavItem text='Inicio'/>
                         </Link>
@@ -21,10 +21,11 @@ function Navbar({text, show}) {
                         <Link to='/contact'>
                             <NavItem text='Contacto'/>
                         </Link>
-                        <CartWidget />
+                        
                     </ul>
                 </nav>
             </div>
+            <CartWidget/>
         </header>
     );
 };
