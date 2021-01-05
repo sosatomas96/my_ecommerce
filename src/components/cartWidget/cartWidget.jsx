@@ -1,10 +1,12 @@
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { BiCart } from 'react-icons/bi';
 import { useState } from 'react';
 import './CartWidget.css';
 
 
 function CartWidget (){
+
+    const RouteHistory = useHistory();
 
     const [ShowWidgetCart, setShowWidgetCart] = useState(false);
 
@@ -13,21 +15,25 @@ function CartWidget (){
 
     }
 
+    const RedirectCart = () => {
+      RouteHistory.push('/Cart');
+    }
 
     return(
       <>
           <BiCart 
             className='cartWidget' 
-            onClick={OpenWidgetCart}
+            onClick={RedirectCart}
           />
+          {/*
           <div className={`widgetCart ${ShowWidgetCart && 'open'}`}>
             <div>
-              <a>Ir al carrito...</a>
+              <button onClick={RedirectCart}>Ir al carrito...</button>
             </div>
           </div>
+          */}
       </>  
     )
     
 }
-
 export default CartWidget;

@@ -22,9 +22,9 @@
 
 
 .open{
-    display: block;
-    width: 250px;
-    height: 500px;
+    position: absolute;
+    top: 50px;
+    right: 25%;
+    display: block; 
     border: black solid 1px;
 }
-

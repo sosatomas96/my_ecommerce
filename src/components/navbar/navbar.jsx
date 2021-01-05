@@ -1,8 +1,7 @@
 import './Navbar.css';
-import NavItem from '../NavItem/NavItem';
 import CartWidget from '../CartWidget/CartWidget';
 import {Link} from 'react-router-dom';
-import {useState} from 'react';
+
 
 function Navbar() {
  
@@ -12,20 +11,26 @@ function Navbar() {
             <div className='container'>
                 <nav> 
                     <ul id='navbar' className='purple lighten-2'>
-                        <Link to='/'>
-                            <NavItem text='Inicio'/>
-                        </Link>
-                        <Link to='/products'>
-                            <NavItem text='Productos'/>
-                        </Link>
-                        <Link to='/contact'>
-                            <NavItem text='Contacto'/>
-                        </Link>
+                        <li>
+                            <Link to='/'>
+                                Inicio   
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/products'>
+                                Productos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/contact'>
+                                Contacto
+                            </Link>
+                        </li>
                         
+                        <CartWidget/>
                     </ul>
                 </nav>
             </div>
-            <CartWidget/>
         </header>
     );
 };
