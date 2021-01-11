@@ -23,15 +23,15 @@ function CartWidget (){
       <>
           <BiCart 
             className='cartWidget' 
-            onClick={RedirectCart}
+            onClick={OpenWidgetCart}
           />
-          {/*
+          
           <div className={`widgetCart ${ShowWidgetCart && 'open'}`}>
             <div>
               <button onClick={RedirectCart}>Ir al carrito...</button>
             </div>
           </div>
-          */}
+          
       </>  
     )
     

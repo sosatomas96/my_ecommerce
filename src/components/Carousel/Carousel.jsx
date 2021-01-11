@@ -10,19 +10,19 @@ function HomeCarousel(){
     var items = [
         {
             name: "Logo",
-            image: "../../assets/logo.png"
+            image: {Logo}
         },
         {
             name: "Encendedores",
-            image: "../../assets/logo.png"
+            image: {Encendedores}
         },
         {
             name: 'Treemix',
-            image: "../../assets/logo.png"
+            image: {Treemix}
         },
         {
             name: 'Tierra',
-            image: "../../assets/logo.png"
+            image: {Tierra}
         },
     ]
  

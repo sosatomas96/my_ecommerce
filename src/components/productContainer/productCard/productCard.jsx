@@ -1,9 +1,18 @@
 import './ProductCard.css';
-import {useState} from 'react';
+import {useState, useContext} from 'react';
+import {Store} from '../../../store';
 
 
 
 function ProductCard({title, photo, price,}){
+
+    const [data, setData] = useContext(Store);
+
+    function AddCart(){
+        setData({...data, qty: data.qty + quantity})
+    }
+
+    
 
     const [quantity, setQuantity] = useState(1);
 
@@ -30,7 +39,7 @@ function ProductCard({title, photo, price,}){
                 <label>{quantity}</label>
                 <button onClick={addQuantity} className='btn-qty'>+</button>
                 </div>
-                <button className='btn-add-cart'>Añadir al carrito!</button>
+                <button className='btn-add-cart' onClick={()=> AddCart}>Añadir al carrito!</button>
                 
             </div>
         </>
