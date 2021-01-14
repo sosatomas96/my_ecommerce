@@ -1,18 +1,12 @@
 import './ProductCard.css';
 import {useState, useContext} from 'react';
+import {Products} from '../../../products';
 import {Store} from '../../../store';
 
+function ProductCard({title, price,}){
 
-
-function ProductCard({title, photo, price,}){
-
-    const [data, setData] = useContext(Store);
-
-    function AddCart(){
-        setData({...data, qty: data.qty + quantity})
-    }
-
-    
+   
+    const {Products, addToCart} = Store;
 
     const [quantity, setQuantity] = useState(1);
 
@@ -23,7 +17,6 @@ function ProductCard({title, photo, price,}){
     function substractQuantity(){
         setQuantity(quantity-1);
     }
-
 
     return(
         <> 
@@ -39,7 +32,7 @@ function ProductCard({title, photo, price,}){
                 <label>{quantity}</label>
                 <button onClick={addQuantity} className='btn-qty'>+</button>
                 </div>
-                <button className='btn-add-cart' onClick={()=> AddCart}>Añadir al carrito!</button>
+                <button className='btn-add-cart' onClick={() => addToCart()}>Añadir al carrito!</button>
                 
             </div>
         </>

@@ -225,3 +225,4 @@ export const Products = [{
     category: 'Papelillos',
     price: '$100'
 }]
+
