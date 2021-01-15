@@ -39,3 +39,5 @@ return (
         {children}
     </Store.Provider>
 );};
+
+export default StoreProvider;
